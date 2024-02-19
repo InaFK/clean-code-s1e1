@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header_image {
+.header-image {
   width: 100%;
 }
-.header .link {
+.header-link {
   font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
@@ -32,7 +32,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-item_add {
+.task-item__add {
   display: flex;
   padding: 20px 0;
 }
@@ -98,9 +98,6 @@ button{
   justify-content: space-between;
   align-items: center;
 }
-.task-item > * {
-  vertical-align: middle;
-}
 .task-item_checkbox {
   margin: 0 10px;
 }
@@ -132,10 +129,10 @@ button{
 .task-item .task-item_input-text {
   display: none;
 }
-.edit-mode .task-item_input-text {
+.task-item__edit-mode .task-item_input-text {
   display: inline-block;
   width: 224px;
 }
-.edit-mode .task-item_label {
+.task-item__edit-mode .task-item_label {
   display: none;
 }
