@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <title>Todo App | InaFK</title>
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body class="page">
     <header class="header">
@@ -16,7 +17,7 @@
       <section>
         <h2 class="section-title">Add Item</h2>
         <div class="task-item_add">
-          <input id="new-task" class="task-item_input-text" type="text">
+          <input type="text" id="new-task" class="task-item_input-text">
           <button class="button">Add</button>
         </div>
       </section>
@@ -42,21 +43,21 @@
             </button>
           </li>
         </ul>
-    </section>
-    <section>
-        <h2 class="section-title">Completed</h2>
-        <ul id="completed-tasks">
-          <li class="task-item">
-            <input type="checkbox" class="task-item_checkbox" checked>
-            <label class="task-item_label">See the Doctor</label>
-            <input type="text" class="task-item_input-text">
-            <button class="button edit">Edit</button>
-            <button class="button delete">
-              <img src="./remove.svg" alt="Delete" class="button_img">
-            </button>
-          </li>
-        </ul>
-    </section>
+      </section>
+      <section>
+          <h2 class="section-title">Completed</h2>
+          <ul id="completed-tasks">
+            <li class="task-item">
+              <input type="checkbox" class="task-item_checkbox" checked>
+              <label class="task-item_label">See the Doctor</label>
+              <input type="text" class="task-item_input-text">
+              <button class="button edit">Edit</button>
+              <button class="button delete">
+                <img src="./remove.svg" alt="Delete" class="button_img">
+              </button>
+            </li>
+          </ul>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
