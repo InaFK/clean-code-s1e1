@@ -34,6 +34,8 @@ var createNewTaskElement=function(taskString){
 
     listItem.className='task-item';
 
+    checkBox.className='task-item_checkbox';
+
     label.innerText=taskString;
     label.className='task-item_label';
 
