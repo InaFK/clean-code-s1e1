@@ -32,12 +32,12 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className='task-item';
+    listItem.className="task-item";
 
-    checkBox.className='task-item_checkbox';
+    checkBox.className="task-item_checkbox";
 
     label.innerText=taskString;
-    label.className='task-item_label';
+    label.className="task-item_label";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -48,7 +48,8 @@ var createNewTaskElement=function(taskString){
     editButton.className="button button__edit";
 
     deleteButton.className="button button__delete";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src="./remove.svg";
+    deleteButtonImg.alt="Delete";
     deleteButtonImg.className="button_img";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -87,7 +88,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector(".task-item_input-text");
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".button__edit");
     var containsClass=listItem.classList.contains("task-item__edit-mode");
@@ -177,7 +178,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 //for each list item
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
-    //bind events to list items chldren(tasksCompleted)
+    //bind events to list items children(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
 }
 
@@ -186,7 +187,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
-    //bind events to list items chldren(tasksIncompleted)
+    //bind events to list items children(tasksIncomplete)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
